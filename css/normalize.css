@@ -212,7 +212,9 @@ audio:not([controls]) {
 img {
   border-style: none;
 }
-
+.logo{
+  height: 120px;
+}
 /**
  * Hide the overflow in IE.
  */
