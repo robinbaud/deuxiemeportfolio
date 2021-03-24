@@ -1,297 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!-- basic -->
+    <title>RobinBaud-developpeurweb</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>Robinbaud-DéveloppeurWeb</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- style css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-        media="screen">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-    <link rel="stylesheet" href="css/style2.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<!-- body -->
 
-<body class="main-layout">
-   
-   <header>
-        <nav>
-            <img src="images/logo2.png" alt="le logo rb en forme d'engrenage">
-            <ul>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">à propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+<body>
+    <header class="-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav-logo">Robin Baud</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li class="nav-item"><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
         </nav>
-   </header> 
-    <!-- our -->
-    <div id="games" class="our">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>Mes Projets</h2>
+    </header>
+    <main class="-main">
+        <section class="Accueil" id="accueil">
+            <div class="home-container bd-grid">
+                <h1 class="home-title"><span>BON</span><br>JOUR.</h1>
+
+                <div class="home-scroll">
+                    <a href="#apropos" class="home-scroll-link"><i class="bx bx-up-arrow-alt"></i>la suite</a>
+                </div>
+               
+                <img src="img/deter.png" alt="image de fond d'une toile d'araigné" class="home-img">
+            </div>
+        </section>
+        <section class="apropos section" id="apropos">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-container bd-grid">
+                <div class="about-img">
+                    <img src="img/moi2.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="about-subtitle">Je suis Robin Baud</h2>
+                    <span class="about-profession">Développeur web</span>
+                    <p class="about-text">J'ai toujours aimé les casse-têtes et découvrir la mécanique derrière toutes sortes de créations numériques.
+                        C'est en fin de compte durant l'été 2020 que j'ai franchi le pas et que j'ai découvert le code à l'école 42 sur Paris.
+                        C'est derrière les écrans noirs des IDE que j'ai découvert ma vocation.
+                        Depuis j'ai poursuivi dans un bachelor "chef de projet digital". C'est ici que j'ai découvert le développement web et je m'y amuse bien.
+                    </p>
+                    <div class="about-social">
+                        <a href="https://www.linkedin.com/in/baud-robin-7b618818b/" class="about-social-icons" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/robinbaud" class="about-social-icons" target="_blank"><i class="bx bxl-github"></i></a>
                     </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="competences section" id="competences">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skill-container bd-grid">
+                <div class="skill-box">
+                    <h3 class="skill-subtitle">Développement</h3>
+                    <span class="skill-name">Html</span>
+                    <span class="skill-name">Css</span>
+                    <span class="skill-name">Javascript</span>
+                    <span class="skill-name">C#</span>
+                    <span class="skill-name">WordPress</span>
+                    <h3 class="skill-subtitle">Design</h3>
+                    <span class="skill-name">Adobe XD</span>
+                    <span class="skill-name">Indesign</span>
+                    <span class="skill-name">Illustrator</span>
+                </div>
+                <div class="skill-img">
+                    <img src="img/crashed.png" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 margin_bottom">
-                    <div class="row">
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="two-box">
-                                <figure><img src="images/Collec.JPG" alt="#" /></figure>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-
-                            <div class="Games">
-                                <h3>La collec</h3>
-                                <p>Un site e-commerce réaliser avec WordPress pour les artiste de Normandie</p>
-                                <a href="https://rbaud.normandieweb.school/" target="_blank">Découvrez le!</a>
-                            </div>
-                        </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-container bd-grid">
+                <div class="portfolio-img">
+                    <img src="img/Collec.JPG" alt="page d'accueil de la boutique en lign La Collec">
+                    <div class="portfolio-link">
+                        <a href="https://rbaud.normandieweb.school" class="portfolio-link-name" target="_blank">découvrir</a>
                     </div>
+                    
                 </div>
-                <div class="col-md-12 margin_bottom">
-                    <div class="row">
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="two-box">
-                                <figure><img src="images/run.JPG" alt="#" /></figure>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-
-                            <div class="Games">
-                                <h3>Myfirstgame</h3>
-                                <p>Mon premier jeu video realisé avec Unity</p>
-                                <a href="https://github.com/robinbaud/Myfirstgame" target="_blank">Télecharger le!</a>
-                            </div>
-                        </div>
+                <div class="portfolio-img">
+                    <img src="img/roxo.JPG" alt="page d'accueil de mon premier site personnel">
+                    <div class="portfolio-link">
+                        <a href="https://robinbaudnws.netlify.app/" class="portfolio-link-name" target="_blank">découvrir</a>
                     </div>
+                    
                 </div>
-                <div class="col-md-12">
-                    <div class="row">
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="two-box">
-                                <figure><img src="images/roxo.JPG" alt="#" /></figure>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-
-                            <div class="Games">
-                                <h3>Mon premier site internet</h3>
-                                <p>Mon premier site personel/portfolio coder en html/css a partir du theme Roxo</p>
-                                <a href="https://robinbaudnws.netlify.app" target="_blank">Découvrez le!</a>
-                            </div>
-                        </div>
+                <div class="portfolio-img">
+                    <img src="img/landing.JPG" alt="ma landing page">
+                    <div class="portfolio-link">
+                        <a href="https://landingpage-robinbaud.netlify.app" class="portfolio-link-name" target="_blank">découvrir</a>
                     </div>
+                    
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/run.JPG" alt="mon premier jeux video realiser sur unity">
+                    <div class="portfolio-link">
+                        <a href="https://github.com/robinbaud/Myfirstgame" class="portfolio-link-name" target="_blank">découvrir sur GitHub</a>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- end our -->
-
-
-    <div id="software" class="We_are">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>à propos</h2>
-                    </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container bd-grid">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Mail:</h3>
+                    <span class="contact-text">robin.baud@gmail.com</span>
+                    <h3 class="contact-subtitle">Telephone:</h3>
+                    <span class="contact-text">06 71 41 79 53</span>
+                    <h3 class="contact-subtitle">Région:</h3>
+                    <span class="contact-text">Normandie</span>
                 </div>
+                <form action="" class="contact-form">
+                    <div class="contact-inputs">
+                        <input type="text" placeholder="Nom" class="contact-input">
+                        <input type="email" placeholder="Mail" class="contact-input">
+                    </div>    
+                        <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+                        <input type="submit" value="Envoyer" class="contact-button">
+                    
+                </form>
+        
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="box_bg">
-                        <div class="box_bg_img">
-                            <figure><img src="images/crashed.png"></figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
-                    <div class="box_text">
-                        <h2>Bonjour jeunes visiteurs!</h2><br>
-                        <p>Durant l'été 2020 je me suis lancé dans le code sur un coup de tête et j'ai vite adoré (plus
-                            précisment j'adore ces casse tête et ce coté mecanique). Aujourd'hui je suit des étude de
-                            développement web à la Normandie Web School et je continue d'apprendre également de mon coté
-                            en me laissant porté par ma curiosité. </p>
-                        <a href="#">Read more</a>
-                    </div>
-                </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer-container bd-grid">
+            <div class="footer-data">
+                <h2 class="footer-title">ROBIN BAUD</h2>
+                <p class="footer-text">Je suis Robin Baud et ceci est mon site personnel</p>
             </div>
-        </div>
-    </div>
-    <!-- end We are -->
-
-    <!--testimonial-->
-
-    <!--end testimonial-->
-
-    <!-- contact -->
-    <div id="contact" class="contact">
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-12">
-
-                    <form name="contact" method="POST" data-netlify="true" class="contact_bg">
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <input class="contactus" placeholder="Name" type="text" name="Name">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <input class="contactus" placeholder="Phone" type="text" name="Email">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <input class="contactus" placeholder="Email" type="text" name="Email">
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <button type="submit" class="send">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="footer-data">
+                <h2 class="footer-title">VISITEZ</h2>
+                <ul>
+                    <li><a href="#accueil" class="footer-link">Accueil</a></li>
+                    <li><a href="#apropos" class="footer-link">À propos</a></li>
+                    <li><a href="#competences" class="footer-link">Compétences</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
             </div>
-
-        </div>
-    </div>
-
-    <!-- end contact -->
-
-    <!--  footer -->
-    <footr>
-        <div class="footer ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Newsletter</h2>
-                    </div>
-                    <div class="col-md-10 offset-md-1">
-                        <form class="news">
-                            <input class="newslatter" placeholder="Enter Your Email" type="text"
-                                name="Enter Your Email">
-                            <button class="submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
-                                <div class="address">
-                                    <ul class="social_link">
-                                        <li><a href="#"><img src="icon/fb.png"></a></li>
-                                        <li><a href="#"><img src="icon/tw.png"></a></li>
-                                        <li><a href="#"><img src="icon/lin(2).png"></a></li>
-                                        <li><a href="#"><img src="icon/instagram.png"></a></li>
-                                    </ul>
-                                    <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="address">
-                                    <h3>Quick links</h3>
-                                    <ul class="Menu_footer">
-                                        <li class="active"> <img src="images/3.png" alt="#"> <a href="#game">Game</a>
-                                        </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#software">Software</a> </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#about">About</a> </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#testimonial"> Testimonial</a>
-                                        </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#contact">Contact</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="address">
-                                    <h3>downloded</h3>
-                                    <ul class="Links_footer">
-                                        <li class="active"><img src="images/3.png" alt="#"> <a href="#">Lorem Ipsum </a>
-                                        </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#">Simply random</a> </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#">Roots in a</a> </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#"> Piece</a> </li>
-                                        <li><img src="images/3.png" alt="#"> <a href="#">Classical</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-sm-6 ">
-                                <div class="address">
-                                    <h3>Contact us </h3>
-                                    <ul class="loca">
-                                        <li>
-                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>London 145
-                                            <br>United Kingdom
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2019 All Rights Reserved. <a href="https://html.design/">Free html Templates</a></p>
-                </div>
+            <div class="footer-data">
+                <h2 class="footer-title">Suivez Moi</h2>
+                <a href="https://www.linkedin.com/in/baud-robin-7b618818b/" class="footer-social" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/robinbaud" class="footer-social" target="_blank"><i class="bx bxl-github"></i></a>
             </div>
         </div>
-    </footr>
-    <!-- end footer -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
